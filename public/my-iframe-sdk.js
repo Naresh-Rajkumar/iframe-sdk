@@ -16,7 +16,10 @@
     window.MyIframeSDK = {
       openWithInput: function (inputValue) {
         modal.style.display = "flex";
-        const message = { input: inputValue };
+        const message = {
+          type: "MY_IFRAME_SDK_INPUT",
+          input: inputValue
+        };
         const sendMessage = () => iframe.contentWindow.postMessage(message, "*");
         if (iframe.contentWindow) sendMessage();
         iframe.onload = sendMessage;
