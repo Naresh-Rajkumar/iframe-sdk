@@ -5,8 +5,9 @@
     openWithInput: function (inputValue, containerId = "my-modal") {
       const modal = document.getElementById(containerId);
       const iframe = document.getElementById(`${containerId}-iframe`);
-
+console.log(modal,"modal")
       if (!modal || !iframe) {
+        
         console.error(`MyIframeSDK: Modal or iframe with ID "${containerId}" not found.`);
         return;
       }
