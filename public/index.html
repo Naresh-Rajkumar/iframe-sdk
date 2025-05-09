@@ -3,13 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Iframe SDK Modal</title>
-  </head>
-  <body>
-    <h1>Iframe SDK Example</h1>
-
-    <button onclick="MyIframeSDK.openWithInput('Hello')">Open Modal</button>
-
-    <script>
+    <script defer>
       document.addEventListener("DOMContentLoaded", function () {
         (function () {
           const modalHTML = `
@@ -46,5 +40,9 @@
         })();
       });
     </script>
+  </head>
+  <body>
+    <h1>Iframe SDK Example</h1>
+    <button onclick="MyIframeSDK.openWithInput('Hello')">Open Modal</button>
   </body>
 </html>
